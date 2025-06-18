@@ -1,0 +1,171 @@
+
+
+
+<!DOCTYPE html>
+<html lang="vi">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+			integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<title>Happy birthday</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="boxcontainer">
+				<div class="image">
+					<img src="flag.png" alt="" />
+				</div>
+				<div class="text-happybirthday">
+					<img src="texthappy.png" alt="" />
+				</div>
+				<div class="cake">
+					<img src="cake.png" alt="" />
+				</div>
+				<div class="box-balloon">
+					<div class="balloon-item1">
+						<img src="balloon.png" alt="" />
+					</div>
+					<div class="balloon-item1">
+						<img src="balloon.png" alt="" />
+					</div>
+				</div>
+				<div class="box-cloud">
+					<div class="cloud">
+						<img src="cloud.png" alt="" />
+					</div>
+					<div class="cloud">
+						<img src="cloud.png" alt="" />
+					</div>
+				</div>
+				<div class="box-firework">
+					<div class="firework">
+						<img src="firework.png" alt="" />
+						<img src="firework1.png" alt="" id="firework1" />
+					</div>
+					<div class="firework">
+						<img src="firework.png" alt="" />
+						<img src="firework1.png" alt="" id="firework1" />
+					</div>
+				</div>
+				<div class="paperCannons">
+					<img src="paperCannons1.png" alt="" />
+				</div>
+				<div class="box-giftbox">
+					<img src="giftbox.png" alt="" />
+					<img src="giftbox.png" alt="" />
+					<img src="giftbox.png" alt="" />
+					<img src="giftbox.png" alt="" />
+					<img src="giftbox.png" alt="" />
+					<img src="giftbox.png" alt="" />
+				</div>
+				<div class="mail">
+					<i class="fa-regular fa-envelope"></i>
+				</div>
+				<div class="boxcute">
+					<div class="cute1">
+						<img src="cute.png" alt="" />
+					</div>
+					<div class="cute2">
+						<img src="cute.png" alt="" />
+					</div>
+				</div>
+			</div>
+			<div class="boxMail">
+				<i class="fa-solid fa-xmark"></i>
+				<div class="boxMail-container">
+					<div class="card1">
+						<div class="userImg">
+							<img src="Picture3.jpg" alt="" />
+						</div>
+						<h3>Happy birthday</h3>
+						<div class="imageCute">
+							<img src="cute1.png" alt="" />
+						</div>
+					</div>
+					<div class="card2">
+						<div class="card2-content">
+							<h3>Gửi aThuw !!</h3>
+							<h2>
+								Hôm nay là một ngày đặc biệt đối với một người đặc biệt ý ha.
+								Chúc cô gái ấy có một ngày sinh nhật thật ý nghĩa, vui vẻ vẻ, hạnh phúc bên gia đình và bạn bè.
+								Chúc cô gái ấy sang tuổi mới lun lun vui vẻ dù cho có khó khăn đến đâu cũng luôn rực rỡ như đoá hoa nha
+								và cố gắng trở thành một phiên bản hoàn thiện nhất trong cuộc đời nha.
+								Và cũng mong cho cô gái đó càng ngày càng xinh đẹp hơn so những năm cũ gấp nhìu nhìu lần nè
+								và hơn nữa đừng quên tới mình nha.
+								Một lần nữa tớ chúc cho người con gái ấy,
+								cố gắng học tập để sớm ra trường nha học tập là một phần nhưng luôn chú ý sức khoẻ của mình nha cô gái nhé. 
+								và đặc biệt sớm tìm được một nửa mà bản thân mong muốn nhaaaaa:3.
+								Dù không biết đoạn đường phía trước còn được đồng hành cùng cậu không
+								nhưng hiện tại tớ cảm thấy rất hạnh phúc khi có cậu bên cạnh . cảm ơn vì đã xuất hiện trong thanh xuân của tớ
+  <!-- Dòng chữ món quà bất ngờ tiếp theo -->
+  <p style="text-align: center; margin-top: 30px;">
+    <a
+      href="https://example.com"
+      target="_blank"
+      style="
+        font-size: 20px;
+        color: #0b0407;
+        font-weight: bold;
+        font-family: inherit;
+        text-decoration: none;
+      "
+    >
+      🎁 Món quà bất ngờ tiếp theo →
+    </a>
+  </p>
+
+							</h2>
+							<div class="imageCute2">
+								<img src="cute2.png" alt="" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script>
+		document.addEventListener('mousemove', function (e) {
+			let body = document.querySelector('body');
+			let heart = document.createElement('span');
+			let x = e.offsetX;
+			let y = e.offsetY;
+			heart.style.left = x + 'px';
+			heart.style.top = y + 'px';
+
+			let size = Math.random() * 10;
+			heart.style.width = 4 * size + 'px';
+			heart.style.height = 4 * size + 'px';
+
+			let transformValue = Math.random() * 360;
+			heart.style.transform = 'rotate(' + transformValue + 'deg)';
+
+			body.appendChild(heart);
+
+			setTimeout(function () {
+				heart.remove();
+			}, 1000);
+		});
+
+		let mailBox = document.querySelector('.mail');
+		let boxmail = document.querySelector('.boxMail');
+		var close = document.querySelector('.fa-xmark');
+		mailBox.onclick = function () {
+			mailBox.classList.toggle('active');
+			boxmail.classList.add('active');
+		};
+
+		close.addEventListener('click', function () {
+			boxmail.classList.remove('active');
+		});
+	</script>
+</html>
